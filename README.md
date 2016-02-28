@@ -567,7 +567,7 @@ Etag 主要为了解决 `Last-Modified` 无法解决的一些问题。
 
     栈的插入和删除操作都是在一端进行的，而队列的操作却是在两端进行的。
 
-    队列先进先出，栈先进后出。
+    队列先进先出，栈后进先出。
 
     栈只允许在表尾一端进行插入和删除，而队列只允许在表尾一端进行插入，在表头一端进行删除
 
@@ -583,7 +583,7 @@ Etag 主要为了解决 `Last-Modified` 无法解决的一些问题。
 
     堆（数据结构）：堆可以被看成是一棵树，如：堆排序；
 
-    栈（数据结构）：一种先进后出的数据结构。
+    栈（数据结构）：一种后进先出的数据结构。
 
 
 
@@ -1264,7 +1264,7 @@ Height = height(包含padding-top + padding-bottom + border-top + border-bottom)
 ```css
     .clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
 
-    .clearfix{display: inline-block;} /* for IE/Mac */
+    .clearfix{zoom: 1;} /* for IE/Mac */
 ```
 
 **清除浮动的几种方法：**
